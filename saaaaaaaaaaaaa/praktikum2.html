@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata Mahasiswa</title>
+    <style>
+        /* Menambahkan gaya untuk seluruh halaman */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8f4fd; /* Latar belakang biru muda */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1E3A8A; /* Biru tua */
+        }
+
+        h4 {
+            color: #1E3A8A; /* Biru tua */
+            text-align: center;
+        }
+
+        /* Gaya untuk form */
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            border: 1px solid #d1e7fd; /* Border biru muda */
+        }
+
+        /* Gaya untuk elemen label dan input */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1E3A8A; /* Biru tua */
+        }
+
+        select{
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #A7C4FF; /* Border biru terang */
+            font-size: 14px;
+            background-color: #f1f9ff; /* Latar belakang input biru muda */
+        }
+
+        input[type="text"] {
+            width: 96%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #A7C4FF; /* Border biru terang */
+            font-size: 14px;
+            background-color: #f1f9ff; /* Latar belakang input biru muda */
+        }
+
+        input[type="text"]:focus,
+        select:focus {
+            border-color: #1E3A8A; /* Biru tua ketika fokus */
+            outline: none;
+            background-color: #ffffff; /* Background putih saat fokus */
+        }
+
+        /* Gaya untuk tombol submit */
+        button[type="submit"] {
+            background-color: #1E3A8A; /* Biru tua */
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2563eb; /* Biru lebih terang saat hover */
+        }
+
+        /* Menambahkan gaya untuk div dan spasi */
+        div {
+            margin-bottom: 20px;
+        }
+
+        /* Menambahkan sedikit gaya responsif */
+        @media (max-width: 600px) {
+            form {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Membuat Form (Input Text & Combobox)</h1>
+    <h4>Masukkan Biodata Mahasiswa:</h4>
+
+    <form action="">
+        <div>
+            <label for="nama">Nama Mahasiswa:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" required>
+        </div>
+
+        <div>
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+        </div>
+
+        <div>
+            <label for="prodi">Prodi Anda:</label>
+            <select name="prodi" id="prodi" required>
+                <option value="...">...</option>
+                <option value="TI-MDI">TI-MDI</option>
+                <option value="TI-DGM">TI-DGM</option>
+                <option value="TI-KAB">TI-KAB</option>
+                <option value="SK">SK (Sistem Komputer)</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Kirim</button>
+        </div>
+    </form>
+</body>
+
+</html>
